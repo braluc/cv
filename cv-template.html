@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="$name$">
+    <title>$name$ -- Curriculum Vitæ</title>
+    <link rel="shortcut icon" href="data/favicon.ico" />
+    <script type="application/ld+json">
+        ${ data/person.jsonld() }
+    </script>
+    <style>
+      ${ vendor/modern-normalize.css() }
+    </style>
+    <style>
+      ${ cv-stylesheet.css() }
+    </style>
+  </head>
+
+  <body>
+    <nav>
+      <header></header>
+      <menu>
+        <li>
+          <a href="https://keyoxide.org/br@ndon.dk">
+            <span class="keyoxide-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://keys.openpgp.org/vks/v1/by-fingerprint/BAD0718ACD17465A53F79EFEE43F1CB599476F0A">
+            <span class="gnupg-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/braluc">
+            <span class="github-icon"></span>
+          </a>
+        </li>
+        <li>
+          <a href="https://codeberg.org/braluc">
+            <span class="codeberg-icon"></span>
+          </a>
+        </li>
+      </menu>
+    </nav>
+    <main>
+      <article>
+        <header role="banner">
+          <figure>
+            <img src="data/photo.png" alt="Picture of $name$" />
+            <figcaption>
+              <h1>$name$</h1>
+              <h2>$jobTitle$</h2>
+            </figcaption>
+          </figure>
+        </header>
+
+        <section>
+          <footer>
+            <ul>
+              <h3>
+                <li>
+                  <a href="mailto:$email$">
+                    $email$
+                  </a>
+                </li>
+              </h3>
+              <li>
+                ${ icons/simple-icons/googlemaps.svg() }
+                $address$
+              </li>
+              <li>
+                ${ icons/ion/language.svg() }
+                <code>$knowsLanguage[; ]$</code>
+              </li>
+              <li>
+                ${ icons/simple-icons/github.svg() }
+                <a href="https://$sameAs/first$">
+                  <code>$sameAs/first$</code>
+                </a>
+              </li>
+              <li>
+                ${ icons/simple-icons/codeberg.svg() }
+                <a href="https://$sameAs/last$">
+                  <code>$sameAs/last$</code>
+                </a>
+              </li>
+              <li>
+                ${ icons/simple-icons/letsencrypt.svg() }
+                <a href="https://keyoxide.org/$email$">
+                  <code>$id$</code>
+                </a>
+              </li>
+            </ul>
+            <div>
+              <h3>Summary</h3>
+              <p>${ data/summary.org() }</p>
+            </div>
+          </footer>
+        </section>
+
+        <section>
+          <h3>Professional Work</h3>
+          $for(hasOccupation)$
+          <details open>
+            <summary>
+              <span>$hasOccupation.hasOccupation.name$</span>
+              <time>
+                $hasOccupation.endDate$ -
+                $hasOccupation.startDate$
+              </time>
+              <ul>
+                $for(hasOccupation.hasOccupation.skills)$
+                <li>
+                  $hasOccupation.hasOccupation.skills$
+                </li>
+                $endfor$
+              </ul>
+            </summary>
+            <p>$hasOccupation.hasOccupation.description$</p>
+            <ul>
+              $for(hasOccupation.hasOccupation.responsibilities)$
+              <li>
+                $hasOccupation.hasOccupation.responsibilities$
+              </li>
+              $endfor$
+            </ul>
+          </details>
+          $endfor$
+        </section>
+
+        <section>
+          <h3>Education</h3>
+          $for(alumniOf)$
+          <details open>
+            <summary>
+              <span>$alumniOf.alumniOf.name$</span>
+              <time>
+                $alumniOf.endDate$ -
+                $alumniOf.startDate$
+              </time>
+            </summary>
+            <p>$alumniOf.roleName$</p>
+            <p><a href="$alumniOf.alumniOf.url$">$alumniOf.alumniOf.url$</a></p>
+          </details>
+          $endfor$
+        </section>
+      </article>
+    </main>
+    <nav>
+      <header></header>
+      <section>
+        <menu>
+        </menu>
+      </section>
+    </nav>
+  </body>
+</html>
