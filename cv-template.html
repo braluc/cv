@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="$name$">
-    <title>$name$ -- Curriculum Vitæ</title>
+    <title>$name$ -- CV</title>
     <link rel="shortcut icon" href="data/favicon.ico" />
     <script type="application/ld+json">
         ${ data/person.jsonld() }
@@ -106,8 +106,8 @@
             <summary>
               <span>$hasOccupation.hasOccupation.name$</span>
               <time>
-                $hasOccupation.endDate$ -
-                $hasOccupation.startDate$
+                $hasOccupation.startDate$ -
+                $hasOccupation.endDate$
               </time>
               <ul>
                 $for(hasOccupation.hasOccupation.skills)$
@@ -136,8 +136,8 @@
             <summary>
               <span>$alumniOf.alumniOf.name$</span>
               <time>
-                $alumniOf.endDate$ -
-                $alumniOf.startDate$
+                $alumniOf.startDate$ -
+                $alumniOf.endDate$
               </time>
             </summary>
             <p>$alumniOf.roleName$</p>
