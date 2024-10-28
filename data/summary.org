@@ -1,1 +1,12 @@
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat dolor lacus, eu tristique justo rutrum et. Ut ultrices pharetra purus, eleifend mollis nisi tristique non. Nunc in mauris est. Aliquam in eleifend risus, nec accumsan elit. Nam tristique libero finibus mi viverra porttitor. Maecenas eget tincidunt est, et luctus tellus. Proin mattis et sapien convallis eleifend. Vivamus aliquam imperdiet lorem ac sodales. Pellentesque lobortis metus sed purus maximus sollicitudin. Duis quam.
+Software Developer with ~10 years experience doing consulting work
+with a variety of organizations, from Danish public institutions and
+non-profits, to trans-national corporations.
+
+'Full-stack' skill set across web and server-side technologies, as
+well as experience with various SQL and Document DBMS. 'DevOps'
+expertise from deployment/operations tasks in cloud, on-premises and
+hybrid scenarios.
+
+Most familiar with dotnet, node.js, Azure, and Linux ecosystems, but a
+broad and eclectic base of knowledge extending beyond that. Passionate
+about Linux and open source; always looking to learn something new.
