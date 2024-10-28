@@ -193,6 +193,10 @@ footer {
     a {
         text-decoration: none;
         color: var(--fg-main);
+
+        :hover {
+            color: var(--maroon);
+        }
     }
 
     em {
