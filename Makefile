@@ -4,7 +4,7 @@ build:
 	--template=cv-template.html \
 	--standalone \
 	--embed-resources \
-	--output publish/index.html
+	--output docs/index.html
 
 watch: build
 	while true; do \
