@@ -6,7 +6,7 @@ build:
 	--embed-resources \
 	--output publish/index.html
 
-watch:
+watch: build
 	while true; do \
 		inotifywait -rq ./icons ./data ./cv-* ; \
 		make build; \
