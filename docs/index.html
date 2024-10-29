@@ -487,6 +487,7 @@ font-size: .75em;
 font-weight: 900;
 list-style: none;
 text-align: center;
+padding: 0 .25em 0.1em .25em;
 }
 }
 h3 {
@@ -578,6 +579,7 @@ padding: 2.5cm 2.5cm 2.5cm 2.5cm;
 article {
 min-width: var(--a4-width);
 margin: 1cm 1cm 0cm 1cm;
+padding-top: 2cm;
 }
 nav {
 margin-top: 1cm;
@@ -602,9 +604,17 @@ max-width: var(--a4-width);
 width: 100%;
 margin: 0;
 box-shadow: none;
+padding-top: 0.5cm;
 }
 nav {
 display: none;
+}
+details {
+summary {
+li {
+color: var(--fg-main);
+}
+}
 }
 }</style>
     <body>
@@ -665,8 +675,8 @@ margin: 0;
 }
 img {
 background-color: var(--border);
-max-width: 3cm;
-height: 3cm;
+max-width: 3.3cm;
+height: 3.3cm;
 border-radius: 50%;
 display: flex;
 flex-grow: 1;
