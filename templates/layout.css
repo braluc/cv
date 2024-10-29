@@ -46,45 +46,6 @@ nav {
     }
 }
 
-figure {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0;
-    padding-bottom: 1em;
-
-    figcaption {
-        flex-grow: 1;
-        flex-direction: column;
-
-        h1, h2 {
-            text-align: center;
-        }
-
-        h1 {
-            font-weight: bold;
-            color: var(--fg-dim);
-            margin: 0;
-        }
-
-        h2 {
-            letter-spacing: 3px;
-            font-weight: lighter;
-            margin: 0;
-        }
-    }
-
-    img {
-        background-color: var(--border);
-        max-width: 3cm;
-        height: 3cm;
-        border-radius: 50%;
-        display: flex;
-        flex-grow: 1;
-        border: 2px solid var(--fg-main);
-    }
-}
-
 details {
 
     a {
@@ -231,18 +192,6 @@ footer {
 
         h3 {
             text-align: right;
-        }
-    }
-
-    figure {
-        flex-direction: row;
-
-        figcaption {
-            text-align: right;
-
-            h1, h2 {
-                text-align: right;
-            }
         }
     }
 
