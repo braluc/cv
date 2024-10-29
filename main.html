@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="$name$">
+    <title>$name$ -- CV</title>
+    <link rel="shortcut icon" href="./content/favicon.ico" />
+    <script type="application/ld+json">
+        ${ person.jsonld() }
+    </script>
+    <style>
+      ${ vendor/styles/modern-normalize.css() }
+    </style>
+    <style>
+      ${ vendor/fonts/inter/inter.css() }
+    </style>
+    <style>
+      ${ main.css() }
+    </style>
+  </head>
+
+  ${ templates/layout.html() }
+</html>

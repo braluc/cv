@@ -1,14 +1,16 @@
+.PHONY: build watch clean
+
 build:
-	pandoc cv-template.html \
-	--metadata-file=data/person.jsonld \
-	--template=cv-template.html \
+	pandoc main.html \
+	--metadata-file=person.jsonld \
+	--template=main.html \
 	--standalone \
 	--embed-resources \
 	--output docs/index.html
 
 watch: build
 	while true; do \
-		inotifywait -rq ./icons ./data ./cv-* ; \
+		inotifywait -rq ./templates ./content ./vendor ./main.* ; \
 		make build; \
 	done
 

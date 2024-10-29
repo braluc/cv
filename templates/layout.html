@@ -1,28 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="$name$">
-    <title>$name$ -- CV</title>
-    <link rel="shortcut icon" href="data/favicon.ico" />
-    <script type="application/ld+json">
-        ${ data/person.jsonld() }
-    </script>
-    <style>
-      ${ vendor/modern-normalize.css() }
-    </style>
-    <style>
-      ${ cv-stylesheet.css() }
-    </style>
-  </head>
-
+<style>
+  ${ templates/layout.css() }
+</style>
   <body>
     <nav>
       <header></header>
       <menu>
         <li>
-          <a href="https://keyoxide.org/br@ndon.dk">
+          <a href="https://keyoxide.org/$email$">
             <span class="keyoxide-icon"></span>
           </a>
         </li>
@@ -47,7 +31,7 @@
       <article>
         <header role="banner">
           <figure>
-            <img src="data/photo.png" alt="Picture of $name$" />
+            <img src="content/photo.png" alt="Picture of $name$" />
             <figcaption>
               <h1>$name$</h1>
               <h2>$jobTitle$</h2>
@@ -66,27 +50,27 @@
                 </li>
               </h3>
               <li>
-                ${ icons/simple-icons/googlemaps.svg() }
+                ${ vendor/icons/simple-icons/googlemaps.svg() }
                 $address$
               </li>
               <li>
-                ${ icons/ion/language.svg() }
+                ${ vendor/icons/ion/language.svg() }
                 <code>$knowsLanguage[; ]$</code>
               </li>
               <li>
-                ${ icons/simple-icons/github.svg() }
+                ${ vendor/icons/simple-icons/github.svg() }
                 <a href="https://$sameAs/first$">
                   <code>$sameAs/first$</code>
                 </a>
               </li>
               <li>
-                ${ icons/simple-icons/codeberg.svg() }
+                ${ vendor/icons/simple-icons/codeberg.svg() }
                 <a href="https://$sameAs/last$">
                   <code>$sameAs/last$</code>
                 </a>
               </li>
               <li>
-                ${ icons/simple-icons/letsencrypt.svg() }
+                ${ vendor/icons/simple-icons/letsencrypt.svg() }
                 <a href="https://keyoxide.org/$email$">
                   <code>$id$</code>
                 </a>
@@ -94,7 +78,7 @@
             </ul>
             <div>
               <h3>Summary</h3>
-              <p>${ data/summary.org() }</p>
+              <p>${ content/text/summary.org() }</p>
             </div>
           </footer>
         </section>
@@ -155,4 +139,4 @@
       </section>
     </nav>
   </body>
-</html>
+
