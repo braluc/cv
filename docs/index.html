@@ -519,6 +519,13 @@ list-style: none;
 display: flex;
 flex-direction: row;
 gap: 0.5em;
+img {
+min-height: .4cm;
+min-width: .4cm;
+max-height: .4cm;
+display: inline-block;
+margin: auto;
+}
 }
 a {
 text-decoration: none;
@@ -536,13 +543,6 @@ code {
 min-width: 16ch;
 font-size: 8pt;
 display: inline-block;
-}
-svg {
-min-height: .4cm;
-min-width: .4cm;
-max-height: .4cm;
-display: inline-block;
-margin: auto;
 }
 h3 {
 padding: 0;
@@ -721,34 +721,40 @@ text-align: right;
                   </li>
                 </h3>
                 <li>
-                  <svg role="img" aria-label="map pin icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  <desc>map pin icon</desc>
-                  	<path fill="currentColor" d="M19.527 4.799c1.212 2.608.937 5.678-.405 8.173c-1.101 2.047-2.744 3.74-4.098 5.614c-.619.858-1.244 1.75-1.669 2.727c-.141.325-.263.658-.383.992c-.121.333-.224.673-.34 1.008c-.109.314-.236.684-.627.687h-.007c-.466-.001-.579-.53-.695-.887c-.284-.874-.581-1.713-1.019-2.525c-.51-.944-1.145-1.817-1.79-2.671zM8.545 7.705l-3.959 4.707c.724 1.54 1.821 2.863 2.871 4.18q.371.465.737.936l4.984-5.925l-.029.01c-1.741.601-3.691-.291-4.392-1.987a3.4 3.4 0 0 1-.209-.716c-.063-.437-.077-.761-.004-1.198zM5.492 3.149l-.003.004c-1.947 2.466-2.281 5.88-1.117 8.77l4.785-5.689l-.058-.05zM14.661.436l-3.838 4.563l.027-.01c1.6-.551 3.403.15 4.22 1.626c.176.319.323.683.377 1.045c.068.446.085.773.012 1.22l-.003.016l3.836-4.561A8.38 8.38 0 0 0 14.67.439zM9.466 5.868L14.162.285l-.047-.012A8.3 8.3 0 0 0 11.986 0a8.44 8.44 0 0 0-6.169 2.766l-.016.018z"></path>
-                  </svg>                Copenhagen
+                  <img alt="Location" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+Cgk8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xOS41MjcgNC43OTljMS4yMTIgMi42MDguOTM3IDUuNjc4LS40MDUgOC4xNzNjLTEuMTAxIDIuMDQ3LTIuNzQ0IDMuNzQtNC4wOTggNS42MTRjLS42MTkuODU4LTEuMjQ0IDEuNzUtMS42NjkgMi43MjdjLS4xNDEuMzI1LS4yNjMuNjU4LS4zODMuOTkyYy0uMTIxLjMzMy0uMjI0LjY3My0uMzQgMS4wMDhjLS4xMDkuMzE0LS4yMzYuNjg0LS42MjcuNjg3aC0uMDA3Yy0uNDY2LS4wMDEtLjU3OS0uNTMtLjY5NS0uODg3Yy0uMjg0LS44NzQtLjU4MS0xLjcxMy0xLjAxOS0yLjUyNWMtLjUxLS45NDQtMS4xNDUtMS44MTctMS43OS0yLjY3MXpNOC41NDUgNy43MDVsLTMuOTU5IDQuNzA3Yy43MjQgMS41NCAxLjgyMSAyLjg2MyAyLjg3MSA0LjE4cS4zNzEuNDY1LjczNy45MzZsNC45ODQtNS45MjVsLS4wMjkuMDFjLTEuNzQxLjYwMS0zLjY5MS0uMjkxLTQuMzkyLTEuOTg3YTMuNCAzLjQgMCAwIDEtLjIwOS0uNzE2Yy0uMDYzLS40MzctLjA3Ny0uNzYxLS4wMDQtMS4xOTh6TTUuNDkyIDMuMTQ5bC0uMDAzLjAwNGMtMS45NDcgMi40NjYtMi4yODEgNS44OC0xLjExNyA4Ljc3bDQuNzg1LTUuNjg5bC0uMDU4LS4wNXpNMTQuNjYxLjQzNmwtMy44MzggNC41NjNsLjAyNy0uMDFjMS42LS41NTEgMy40MDMuMTUgNC4yMiAxLjYyNmMuMTc2LjMxOS4zMjMuNjgzLjM3NyAxLjA0NWMuMDY4LjQ0Ni4wODUuNzczLjAxMiAxLjIybC0uMDAzLjAxNmwzLjgzNi00LjU2MUE4LjM4IDguMzggMCAwIDAgMTQuNjcuNDM5ek05LjQ2NiA1Ljg2OEwxNC4xNjIuMjg1bC0uMDQ3LS4wMTJBOC4zIDguMyAwIDAgMCAxMS45ODYgMGE4LjQ0IDguNDQgMCAwIDAtNi4xNjkgMi43NjZsLS4wMTYuMDE4eiIgLz4KPC9zdmc+" />
+                  Copenhagen
                 </li>
                 <li>
-                  <svg role="img" aria-label="language icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                  	<path fill="currentColor" d="m478.33 433.6l-90-218a22 22 0 0 0-40.67 0l-90 218a22 22 0 1 0 40.67 16.79L316.66 406h102.67l18.33 44.39A22 22 0 0 0 458 464a22 22 0 0 0 20.32-30.4ZM334.83 362L368 281.65L401.17 362Zm-66.99-19.08a22 22 0 0 0-4.89-30.7c-.2-.15-15-11.13-36.49-34.73c39.65-53.68 62.11-114.75 71.27-143.49H330a22 22 0 0 0 0-44H214V70a22 22 0 0 0-44 0v20H54a22 22 0 0 0 0 44h197.25c-9.52 26.95-27.05 69.5-53.79 108.36c-31.41-41.68-43.08-68.65-43.17-68.87a22 22 0 0 0-40.58 17c.58 1.38 14.55 34.23 52.86 83.93c.92 1.19 1.83 2.35 2.74 3.51c-39.24 44.35-77.74 71.86-93.85 80.74a22 22 0 1 0 21.07 38.63c2.16-1.18 48.6-26.89 101.63-85.59c22.52 24.08 38 35.44 38.93 36.1a22 22 0 0 0 30.75-4.9Z"></path>
-                  </svg>                <code>en-US; da-DK</code>
+                  <img alt="Languages" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj4KCTxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTQ3OC4zMyA0MzMuNmwtOTAtMjE4YTIyIDIyIDAgMCAwLTQwLjY3IDBsLTkwIDIxOGEyMiAyMiAwIDEgMCA0MC42NyAxNi43OUwzMTYuNjYgNDA2aDEwMi42N2wxOC4zMyA0NC4zOUEyMiAyMiAwIDAgMCA0NTggNDY0YTIyIDIyIDAgMCAwIDIwLjMyLTMwLjRaTTMzNC44MyAzNjJMMzY4IDI4MS42NUw0MDEuMTcgMzYyWm0tNjYuOTktMTkuMDhhMjIgMjIgMCAwIDAtNC44OS0zMC43Yy0uMi0uMTUtMTUtMTEuMTMtMzYuNDktMzQuNzNjMzkuNjUtNTMuNjggNjIuMTEtMTE0Ljc1IDcxLjI3LTE0My40OUgzMzBhMjIgMjIgMCAwIDAgMC00NEgyMTRWNzBhMjIgMjIgMCAwIDAtNDQgMHYyMEg1NGEyMiAyMiAwIDAgMCAwIDQ0aDE5Ny4yNWMtOS41MiAyNi45NS0yNy4wNSA2OS41LTUzLjc5IDEwOC4zNmMtMzEuNDEtNDEuNjgtNDMuMDgtNjguNjUtNDMuMTctNjguODdhMjIgMjIgMCAwIDAtNDAuNTggMTdjLjU4IDEuMzggMTQuNTUgMzQuMjMgNTIuODYgODMuOTNjLjkyIDEuMTkgMS44MyAyLjM1IDIuNzQgMy41MWMtMzkuMjQgNDQuMzUtNzcuNzQgNzEuODYtOTMuODUgODAuNzRhMjIgMjIgMCAxIDAgMjEuMDcgMzguNjNjMi4xNi0xLjE4IDQ4LjYtMjYuODkgMTAxLjYzLTg1LjU5YzIyLjUyIDI0LjA4IDM4IDM1LjQ0IDM4LjkzIDM2LjFhMjIgMjIgMCAwIDAgMzAuNzUtNC45WiIgLz4KPC9zdmc+" />
+                  <span>
+                    <code>
+                                            da-DK;
+                                            en-US;
+                                        </code>
+                  </span>
                 </li>
-                <li>
-                  <svg role="img" aria-label="github icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  	<path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12c0 5.303 3.438 9.8 8.205 11.385c.6.113.82-.258.82-.577c0-.285-.01-1.04-.015-2.04c-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729c1.205.084 1.838 1.236 1.838 1.236c1.07 1.835 2.809 1.305 3.495.998c.108-.776.417-1.305.76-1.605c-2.665-.3-5.466-1.332-5.466-5.93c0-1.31.465-2.38 1.235-3.22c-.135-.303-.54-1.523.105-3.176c0 0 1.005-.322 3.3 1.23c.96-.267 1.98-.399 3-.405c1.02.006 2.04.138 3 .405c2.28-1.552 3.285-1.23 3.285-1.23c.645 1.653.24 2.873.12 3.176c.765.84 1.23 1.91 1.23 3.22c0 4.61-2.805 5.625-5.475 5.92c.42.36.81 1.096.81 2.22c0 1.606-.015 2.896-.015 3.286c0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"></path>
-                  </svg>                <a href="https://github.com/braluc">
-                    <code>github.com/braluc</code>
-                  </a>
-                </li>
-                <li>
-                  <svg role="img" aria-label="codeberg icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  	<path fill="currentColor" d="M11.955.49A12 12 0 0 0 0 12.49a12 12 0 0 0 1.832 6.373L11.838 5.928a.187.14 0 0 1 .324 0l10.006 12.935A12 12 0 0 0 24 12.49a12 12 0 0 0-12-12zm.375 6.467l4.416 16.553a12 12 0 0 0 5.137-4.213z"></path>
-                  </svg>                <a href="https://codeberg.org/braluc">
-                    <code>codeberg.org/braluc</code>
-                  </a>
-                </li>
-                <li>
-                  <svg role="img" aria-label="pgp key icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                  	<path fill="currentColor" d="M11.991 0a.883.883 0 0 0-.871.817v3.02a.883.883 0 0 0 .88.884a.883.883 0 0 0 .88-.88V.816A.883.883 0 0 0 11.991 0m7.705 3.109a.88.88 0 0 0-.521.174L16.8 5.231a.88.88 0 0 0 .559 1.563a.88.88 0 0 0 .56-.2l2.37-1.951a.88.88 0 0 0-.594-1.534M4.32 3.122a.883.883 0 0 0-.611 1.52l2.37 1.951a.88.88 0 0 0 .56.2v-.002a.88.88 0 0 0 .56-1.56L4.828 3.283a.9.9 0 0 0-.508-.16zm7.66 3.228a5.046 5.046 0 0 0-5.026 5.045v1.488H5.787a.967.967 0 0 0-.965.964v9.189a.967.967 0 0 0 .965.964h12.426a.967.967 0 0 0 .964-.964v-9.19a.967.967 0 0 0-.964-.963h-1.168v-1.488A5.046 5.046 0 0 0 11.98 6.35m.012 2.893a2.15 2.15 0 0 1 2.16 2.152v1.488H9.847v-1.488a2.15 2.15 0 0 1 2.145-2.152m7.382.503a.883.883 0 1 0 .07 1.763h3.027a.883.883 0 0 0 0-1.76h-3.027zM1.529 9.75a.883.883 0 0 0 0 1.76h2.999a.883.883 0 0 0 0-1.76zm10.46 6.774a1.28 1.28 0 0 1 .64 2.393v1.245a.63.63 0 0 1-1.259 0v-1.245a1.28 1.28 0 0 1 .619-2.393"></path>
-                  </svg>                <a href="https://keyoxide.org/br@ndon.dk">
+                                <li>
+                    <img alt="Github" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+Cgk8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMiAuMjk3Yy02LjYzIDAtMTIgNS4zNzMtMTIgMTJjMCA1LjMwMyAzLjQzOCA5LjggOC4yMDUgMTEuMzg1Yy42LjExMy44Mi0uMjU4LjgyLS41NzdjMC0uMjg1LS4wMS0xLjA0LS4wMTUtMi4wNGMtMy4zMzguNzI0LTQuMDQyLTEuNjEtNC4wNDItMS42MUM0LjQyMiAxOC4wNyAzLjYzMyAxNy43IDMuNjMzIDE3LjdjLTEuMDg3LS43NDQuMDg0LS43MjkuMDg0LS43MjljMS4yMDUuMDg0IDEuODM4IDEuMjM2IDEuODM4IDEuMjM2YzEuMDcgMS44MzUgMi44MDkgMS4zMDUgMy40OTUuOTk4Yy4xMDgtLjc3Ni40MTctMS4zMDUuNzYtMS42MDVjLTIuNjY1LS4zLTUuNDY2LTEuMzMyLTUuNDY2LTUuOTNjMC0xLjMxLjQ2NS0yLjM4IDEuMjM1LTMuMjJjLS4xMzUtLjMwMy0uNTQtMS41MjMuMTA1LTMuMTc2YzAgMCAxLjAwNS0uMzIyIDMuMyAxLjIzYy45Ni0uMjY3IDEuOTgtLjM5OSAzLS40MDVjMS4wMi4wMDYgMi4wNC4xMzggMyAuNDA1YzIuMjgtMS41NTIgMy4yODUtMS4yMyAzLjI4NS0xLjIzYy42NDUgMS42NTMuMjQgMi44NzMuMTIgMy4xNzZjLjc2NS44NCAxLjIzIDEuOTEgMS4yMyAzLjIyYzAgNC42MS0yLjgwNSA1LjYyNS01LjQ3NSA1LjkyYy40Mi4zNi44MSAxLjA5Ni44MSAyLjIyYzAgMS42MDYtLjAxNSAyLjg5Ni0uMDE1IDMuMjg2YzAgLjMxNS4yMS42OS44MjUuNTdDMjAuNTY1IDIyLjA5MiAyNCAxNy41OTIgMjQgMTIuMjk3YzAtNi42MjctNS4zNzMtMTItMTItMTIiIC8+Cjwvc3ZnPg==">
+                    <a href="https://github.com/braluc">
+                      <code>github.com/braluc</code>
+                    </a>
+                  </li>
+                                <li>
+                    <img alt="Codeberg" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+Cgk8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMS45NTUuNDlBMTIgMTIgMCAwIDAgMCAxMi40OWExMiAxMiAwIDAgMCAxLjgzMiA2LjM3M0wxMS44MzggNS45MjhhLjE4Ny4xNCAwIDAgMSAuMzI0IDBsMTAuMDA2IDEyLjkzNUExMiAxMiAwIDAgMCAyNCAxMi40OWExMiAxMiAwIDAgMC0xMi0xMnptLjM3NSA2LjQ2N2w0LjQxNiAxNi41NTNhMTIgMTIgMCAwIDAgNS4xMzctNC4yMTN6IiAvPgo8L3N2Zz4=">
+                    <a href="https://codeberg.org/braluc">
+                      <code>codeberg.org/braluc</code>
+                    </a>
+                  </li>
+                                <li>
+                    <img alt="Ariadne
+  Id" src="data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAyNCAyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KIDxwYXRoIGQ9Im0xNC42NjIgMi43NzM0Yy0wLjg2OTE0IDguNWUtNiAtMS41NzQyIDAuNzA1MDktMS41NzQyIDEuNTc0MiAwIDAuNTI1MjggMC4yNjA5NSAxLjAwNiAwLjY3NzczIDEuMjk0OSAwLjEyMDA3IDAuMDgzMTM4IDAuMTg5MTIgMC4wOTI1NjIgMC4yMDUwOCAwLjIyMjY2IDAuMDE2MDQgMC4xMzAwMS0wLjE2MjExIDAuMjUtMC4xNjIxMSAwLjI1bC0zLjMyNDIgMi41ODU5di0wLjUyOTNjMC4xNDcyNC0xLjQ1NjEtMC44MzIyMy0yLjk0MDUtMi4yNzU0LTMuMjc5My0xLjcxOS0wLjUwMi0zLjc5MzEgMS4wMjk4LTMuNzkzMSAyLjY0NTIgMCAxLjkxODIgMC4wMDc3OCA4LjkyNDcgMC4wMDIxMSAxMy40MjktMC4wMDIxMSAxLjY3NzIgMS4zNTc3IDMuMDMzMiAzLjAzMzIgMy4wMzMyczMuMDM1Mi0xLjM1NzYgMy4wMzUyLTMuMDMzMnYtMC4zOTY0OGMxLjM2NSAwLjkwODk4IDIuNzMwMyAxLjgxNzQgNC4wOTM4IDIuNzI4NSAxLjEyOTkgMC45MzAyMSAyLjkwNzggMC45Mzg1OSAzLjk5MDItMC4wNzQyMiAxLjM3MTItMS4xNTE4IDEuMzIzLTMuNDk5OS0wLjA5MTgtNC41OTU3LTEuOTM1LTEuMzIxOS0zLjg4OTctMi42MTgxLTUuODQxOC0zLjkxNmw1Ljc3MzQtNC40ODgzYzEuMTYzMi0wLjkwNDY2IDEuNDk1NC0yLjUwMDUgMC44MzM5OC0zLjc4MzItMC4wNDkzOC0wLjA5NTc1NS0wLjA2NTExLTAuMTI5OTgtMC4xNjc5Ny0wLjE2OTkyLTAuMTAyNzctMC4wMzk5MzgtMC4xODQyNSAwLjAwNDM5LTAuMjg3MTEgMC4wNDI5NjktMC4xNDEzOCAwLjA1MzA2Mi0wLjI5MjU3IDAuMDgwMDc4LTAuNDQ1MzEgMC4wODAwNzgtMC42OTg5NCAwLTEuMjY1Ni0wLjU2NjYyLTEuMjY1Ni0xLjI2NTYgOS40ZS01IC0wLjA5NDg1MyAwLjAxNjM2LTAuMTQ5OTYtMC4wMTE3Mi0wLjIwODk4LTAuMDI4MDctMC4wNTkwMjMtMC4xMDIzMy0wLjA5NzA5Mi0wLjE3NTc4LTAuMTA1NDctMC4xMjE5MS0wLjAxMzkyNi0wLjI0NDM3LTAuMDIwNDc2LTAuMzY3MTktMC4wMTk1MzEtMC4xMjA0OSA4LjU4N2UtNCAtMC4yMTE2OS0wLjAwOTUyLTAuMjYzNjctMC4wOTc2NTYtMC4wNTE4OS0wLjA4ODE0Mi0wLjAyMzQ0LTAuMTg5NzUtMC4wMjM0NC0wLjM0OTYxIDAtMC44NjkxNS0wLjcwNTA0LTEuNTc0Mi0xLjU3NDItMS41NzQyeiIvPgogPHBhdGggZD0ibTEyLjgwNiAzLjA4NWExLjA3MzUgMS4wNzM1IDAgMCAxLTEuMDczNSAxLjA3MzUgMS4wNzM1IDEuMDczNSAwIDAgMS0xLjA3MzUtMS4wNzM1IDEuMDczNSAxLjA3MzUgMCAwIDEgMS4wNzM1LTEuMDczNSAxLjA3MzUgMS4wNzM1IDAgMCAxIDEuMDczNSAxLjA3MzV6Ii8+CiA8cGF0aCBkPSJtMTMuNDU4IDEuMDAzM2EwLjcwMDM4IDAuNzAwMzggMCAwIDEtMC43MDAzOCAwLjcwMDM4IDAuNzAwMzggMC43MDAzOCAwIDAgMS0wLjcwMDM4LTAuNzAwMzggMC43MDAzOCAwLjcwMDM4IDAgMCAxIDAuNzAwMzgtMC43MDAzOCAwLjcwMDM4IDAuNzAwMzggMCAwIDEgMC43MDAzOCAwLjcwMDM4eiIvPgogPHBhdGggZD0ibTExLjMzOSAwLjQ4OTAyYTAuNDg5MDIgMC40ODkwMiAwIDAgMS0wLjQ4OTAyIDAuNDg5MDIgMC40ODkwMiAwLjQ4OTAyIDAgMCAxLTAuNDg5MDItMC40ODkwMiAwLjQ4OTAyIDAuNDg5MDIgMCAwIDEgMC40ODkwMi0wLjQ4OTAyIDAuNDg5MDIgMC40ODkwMiAwIDAgMSAwLjQ4OTAyIDAuNDg5MDJ6Ii8+CiA8cGF0aCBkPSJtMTkuMjAzIDUuMTI5NmEwLjg1Nzk3IDAuODU3OTcgMCAwIDEtMC44NTc5NyAwLjg1Nzk3IDAuODU3OTcgMC44NTc5NyAwIDAgMS0wLjg1Nzk3LTAuODU3OTcgMC44NTc5NyAwLjg1Nzk3IDAgMCAxIDAuODU3OTctMC44NTc5NyAwLjg1Nzk3IDAuODU3OTcgMCAwIDEgMC44NTc5NyAwLjg1Nzk3eiIvPgo8L3N2Zz4=">
+                    <a href="https://keyoxide.org/br@ndon.dk">
+                      <code>keyoxide.org/br@ndon.dk</code>
+                    </a>
+                  </li>
+                              <li>
+                  <img alt="PGP Thumbprint" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI+Cgk8cGF0aCBmaWxsPSJjdXJyZW50Q29sb3IiIGQ9Ik0xMS45OTEgMGEuODgzLjg4MyAwIDAgMC0uODcxLjgxN3YzLjAyYS44ODMuODgzIDAgMCAwIC44OC44ODRhLjg4My44ODMgMCAwIDAgLjg4LS44OFYuODE2QS44ODMuODgzIDAgMCAwIDExLjk5MSAwbTcuNzA1IDMuMTA5YS44OC44OCAwIDAgMC0uNTIxLjE3NEwxNi44IDUuMjMxYS44OC44OCAwIDAgMCAuNTU5IDEuNTYzYS44OC44OCAwIDAgMCAuNTYtLjJsMi4zNy0xLjk1MWEuODguODggMCAwIDAtLjU5NC0xLjUzNE00LjMyIDMuMTIyYS44ODMuODgzIDAgMCAwLS42MTEgMS41MmwyLjM3IDEuOTUxYS44OC44OCAwIDAgMCAuNTYuMnYtLjAwMmEuODguODggMCAwIDAgLjU2LTEuNTZMNC44MjggMy4yODNhLjkuOSAwIDAgMC0uNTA4LS4xNnptNy42NiAzLjIyOGE1LjA0NiA1LjA0NiAwIDAgMC01LjAyNiA1LjA0NXYxLjQ4OEg1Ljc4N2EuOTY3Ljk2NyAwIDAgMC0uOTY1Ljk2NHY5LjE4OWEuOTY3Ljk2NyAwIDAgMCAuOTY1Ljk2NGgxMi40MjZhLjk2Ny45NjcgMCAwIDAgLjk2NC0uOTY0di05LjE5YS45NjcuOTY3IDAgMCAwLS45NjQtLjk2M2gtMS4xNjh2LTEuNDg4QTUuMDQ2IDUuMDQ2IDAgMCAwIDExLjk4IDYuMzVtLjAxMiAyLjg5M2EyLjE1IDIuMTUgMCAwIDEgMi4xNiAyLjE1MnYxLjQ4OEg5Ljg0N3YtMS40ODhhMi4xNSAyLjE1IDAgMCAxIDIuMTQ1LTIuMTUybTcuMzgyLjUwM2EuODgzLjg4MyAwIDEgMCAuMDcgMS43NjNoMy4wMjdhLjg4My44ODMgMCAwIDAgMC0xLjc2aC0zLjAyN3pNMS41MjkgOS43NWEuODgzLjg4MyAwIDAgMCAwIDEuNzZoMi45OTlhLjg4My44ODMgMCAwIDAgMC0xLjc2em0xMC40NiA2Ljc3NGExLjI4IDEuMjggMCAwIDEgLjY0IDIuMzkzdjEuMjQ1YS42My42MyAwIDAgMS0xLjI1OSAwdi0xLjI0NWExLjI4IDEuMjggMCAwIDEgLjYxOS0yLjM5MyIgLz4KPC9zdmc+">
+                  <a href="https://keyoxide.org/br@ndon.dk">
                     <code>BA D0 71 8A CD 17 46 5A 53 F7 9E FE E4 3F 1C
   B5 99 47 6F 0A</code>
                   </a>
@@ -759,14 +765,12 @@ text-align: right;
                 <p>Software Developer with ~10 years experience doing consulting work
   with a variety of organizations, from Danish public institutions and
   non-profits, to trans-national corporations.
-
   &#39;Full-stack&#39; skill set across web and server-side technologies, as
   well as experience with various SQL and Document DBMS. &#39;DevOps&#39;
   expertise from deployment/operations tasks in cloud, on-premises and
   hybrid scenarios.
-
-  Most familiar with dotnet, node.js, Azure, and Linux ecosystems, but a
-  broad and eclectic base of knowledge extending beyond that. Passionate
+  Most familiar with dotnet, node.js, Azure, and Linux ecosystems, but
+  a broad and eclectic base of knowledge extending beyond that. Passionate
   about Linux and open source; always looking to learn something new.</p>
               </div>
             </footer>
@@ -776,7 +780,8 @@ text-align: right;
             <h3>Professional Work</h3>
                       <details open>
               <summary>
-                <span>Analysis Platform – Lead developer</span>
+                <span>Anaylsis Platform --</span>
+                <span>Lead developer</span>
                 <time>
                   Sep 2020 -
                   Mar 2024
@@ -820,131 +825,44 @@ text-align: right;
                   </li>
                                 </ul>
               </summary>
-              <p>Platform for sharing and analyzing microbiology
-  information between public institutions. Provides secure access to a
-  portal where sample data can be managed, uploaded for processing on
-  dedicated HPC clusters, and visually compared.</p>
-              <ul>
-                              <li>
-                  Consulting
-                </li>
-                              <li>
-                  Design
-                </li>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Integration
-                </li>
-                              <li>
-                  Front-end
-                </li>
-                              <li>
-                  Back-end
-                </li>
-                              <li>
-                  Deployment
-                </li>
-                              <li>
-                  Support
-                </li>
-                            </ul>
-            </details>
-                      <details open>
-              <summary>
-                <span>Remote Asset Management – Developer</span>
-                <time>
-                  Aug 2023 -
-                  Feb 2024
-                </time>
+                <div>
+                  Platform for sharing and analyzing microbiology
+                  information between public institutions. Provides
+                  secure access to a portal where sample data can be
+                  managed, uploaded for processing on dedicated HPC
+                  clusters, and visually compared.
+                </div>
                 <ul>
                                   <li>
-                    Azure
+                    Consulting
                   </li>
                                   <li>
-                    Bicep
+                    Design
                   </li>
                                   <li>
-                    FunctionApp
+                    Development
                   </li>
                                   <li>
-                    C#
+                    Integration
                   </li>
                                   <li>
-                    CosmosDB
+                    Front-end
                   </li>
                                   <li>
-                    Influx
+                    Back-end
+                  </li>
+                                  <li>
+                    Deployment
+                  </li>
+                                  <li>
+                    Support
                   </li>
                                 </ul>
-              </summary>
-              <p>Collection of micro-services responsible for monitoring
-  conditions for remote assets deployed aboard vessels. Role consisted
-  primarily of ingesting and presenting the telemetry from these
-  devices. Additional tasks included consolidating the deployment of the
-  micro-services to Azure.</p>
-              <ul>
-                              <li>
-                  Consulting
-                </li>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Back-end
-                </li>
-                              <li>
-                  Deployment
-                </li>
-                            </ul>
             </details>
                       <details open>
               <summary>
-                <span>Duplicate Detection Microservice –
-  Developer</span>
-                <time>
-                  Jun 2023 -
-                  Aug 2023
-                </time>
-                <ul>
-                                  <li>
-                    Azure
-                  </li>
-                                  <li>
-                    C#
-                  </li>
-                                  <li>
-                    PowerPlatform
-                  </li>
-                                  <li>
-                    FunctionApp
-                  </li>
-                                </ul>
-              </summary>
-              <p>Service for comparing incoming Contacts against those
-  already known within Customer’s Power Platform tenancy using a series
-  of business-defined heuristics. The micro-service was built
-  specifically for ease of consumption by the organization’s existing
-  no-code Workflows.</p>
-              <ul>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Integration
-                </li>
-                              <li>
-                  Back-end
-                </li>
-                              <li>
-                  Deployment
-                </li>
-                            </ul>
-            </details>
-                      <details open>
-              <summary>
-                <span>Print-Line Management System – Developer</span>
+                <span>Print-Line Management System --</span>
+                <span>Developer</span>
                 <time>
                   May 2022 -
                   Dec 2022
@@ -1000,188 +918,34 @@ text-align: right;
                   </li>
                                 </ul>
               </summary>
-              <p>Hybrid/SaaS management software which integrates the
-  customer’s CMS or Label repository with Loftware NiceLabel, employing
-  business-specific rules for templating the labels, modelling their
-  Print-Lines and controlling their PLCs on the factory floor. Role
-  consisted primarily of building the web interface for controlling the
-  software, as well as orchestrating the containerization and deployment
-  of all services to a hybrid on-premises/cloud environment.</p>
-              <ul>
-                              <li>
-                  Architecture
-                </li>
-                              <li>
-                  Design
-                </li>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Front-end
-                </li>
-                              <li>
-                  Deployment
-                </li>
-                            </ul>
-            </details>
-                      <details open>
-              <summary>
-                <span>Technician Portal – Lead Developer</span>
-                <time>
-                  Jan 2018 -
-                  Nov 2022
-                </time>
+                <div>
+                  Hybrid/SaaS management software which integrates the
+                  customer’s CMS or Label repository with Loftware
+                  NiceLabel, employing business-specific rules for
+                  templating the labels, modelling their Print-Lines and
+                  controlling their PLCs on the factory floor. Role
+                  consisted primarily of building the web interface for
+                  controlling the software, as well as orchestrating the
+                  containerization and deployment of all services to a
+                  hybrid on-premises/cloud environment.
+                </div>
                 <ul>
                                   <li>
-                    Azure
+                    Architecture
                   </li>
                                   <li>
-                    WebApp
+                    Design
                   </li>
                                   <li>
-                    Entra
+                    Development
                   </li>
                                   <li>
-                    C#
+                    Front-end
                   </li>
                                   <li>
-                    PowerShell
-                  </li>
-                                  <li>
-                    Bash
-                  </li>
-                                  <li>
-                    TypeScript
-                  </li>
-                                  <li>
-                    React
-                  </li>
-                                  <li>
-                    OIDC
-                  </li>
-                                  <li>
-                    OpenAPI
-                  </li>
-                                  <li>
-                    Redis
-                  </li>
-                                  <li>
-                    RediSearch
-                  </li>
-                                  <li>
-                    SharePoint
+                    Deployment
                   </li>
                                 </ul>
-              </summary>
-              <p>Web Portal surfacing data across myriad sources
-  including SharePoint Online, Dynamics CRM, on-premises Navision, among
-  other, in order to provide KB articles, installation data, etc. to
-  technicians while on-site at a customer. Accelerated search via
-  RediSearch; went on to become a primary data platform for the
-  organization. Other features include: A Customer Portal; REST API
-  servicing external integrations; Azure-to-on-premise tunnel.</p>
-              <ul>
-                              <li>
-                  Architecture
-                </li>
-                              <li>
-                  Consulting
-                </li>
-                              <li>
-                  Design
-                </li>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Front-end
-                </li>
-                              <li>
-                  Back-end
-                </li>
-                              <li>
-                  Deployment
-                </li>
-                              <li>
-                  Integration
-                </li>
-                              <li>
-                  Support
-                </li>
-                            </ul>
-            </details>
-                      <details open>
-              <summary>
-                <span>Webshop and Integrations – Developer</span>
-                <time>
-                  Apr 2017 -
-                  Mar 2018
-                </time>
-                <ul>
-                                  <li>
-                    Azure
-                  </li>
-                                  <li>
-                    WebApp
-                  </li>
-                                  <li>
-                    C#
-                  </li>
-                                  <li>
-                    F#
-                  </li>
-                                  <li>
-                    PHP
-                  </li>
-                                  <li>
-                    WordPress
-                  </li>
-                                  <li>
-                    OpenCart
-                  </li>
-                                  <li>
-                    HeroBase
-                  </li>
-                                  <li>
-                    Bash
-                  </li>
-                                  <li>
-                    JavaScript
-                  </li>
-                                  <li>
-                    OpenAPI
-                  </li>
-                                  <li>
-                    Dynamics CRM
-                  </li>
-                                </ul>
-              </summary>
-              <p>Integrated an existing Webshop solution and WordPress
-  site with a newly migrated Dynamics CRM instance and HeroBase API for
-  a non-profit. This included creating registration and purchase forms
-  which associated Contacts in CRM with various payments via various
-  methods including PBS agreements.</p>
-              <ul>
-                              <li>
-                  Consulting
-                </li>
-                              <li>
-                  Development
-                </li>
-                              <li>
-                  Front-end
-                </li>
-                              <li>
-                  Back-end
-                </li>
-                              <li>
-                  Integration
-                </li>
-                              <li>
-                  Support
-                </li>
-                            </ul>
             </details>
                     </section>
 
@@ -1197,7 +961,7 @@ text-align: right;
                 </time>
               </summary>
               <p>BSc Computer Science</p>
-              <p><a href="https://kea.dk">https://kea.dk</a></p>
+              <p><a href>https://kea.dk</a></p>
             </details>
                       <details open>
               <summary>
@@ -1208,7 +972,7 @@ text-align: right;
                 </time>
               </summary>
               <p>AAS Computer Programming</p>
-              <p><a href="https://waketech.edu">https://waketech.edu</a></p>
+              <p><a href>https://waketech.edu</a></p>
             </details>
                     </section>
         </article>

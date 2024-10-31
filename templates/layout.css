@@ -127,6 +127,15 @@ footer {
         display: flex;
         flex-direction: row;
         gap: 0.5em;
+
+        img {
+            min-height: .4cm;
+            min-width: .4cm;
+            max-height: .4cm;
+            display: inline-block;
+            margin: auto;
+        }
+
     }
 
     a {
@@ -150,13 +159,7 @@ footer {
         display: inline-block;
     }
 
-    svg {
-        min-height: .4cm;
-        min-width: .4cm;
-        max-height: .4cm;
-        display: inline-block;
-        margin: auto;
-    }
+    
 
     h3 {
         padding: 0;

@@ -2,7 +2,7 @@
 
 build:
 	pandoc main.html \
-	--metadata-file=person.jsonld \
+	--metadata-file=main.json \
 	--template=main.html \
 	--standalone \
 	--embed-resources \
@@ -15,4 +15,4 @@ watch: build
 	done
 
 clean:
-	rm publish/*
+	rm docs/index.html

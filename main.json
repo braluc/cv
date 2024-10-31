@@ -1,0 +1,175 @@
+{
+    "givenName": "Brandon",
+    "additionalName": "Scott",
+    "familyName": "Lucas",
+    "name": "Brandon Lucas",
+    "address": "Copenhagen",
+    "nationality": "USA",
+    "email": "br@ndon.dk",
+    "thumbprint": "BA D0 71 8A CD 17 46 5A 53 F7 9E FE E4 3F 1C B5 99 47 6F 0A",
+    "jobTitle": "Developer Consultant",
+    "knowsLanguage": {
+        "en-US": {
+            "name": "English",
+            "level": "Native"
+        },
+        "da-DK": {
+            "name": "Danish",
+            "level": "CEFR B2"
+        }
+    },
+    "sameAs": [
+        {
+            "name": "Github",
+            "icon": "simple-icons/github.svg",
+            "uri": "github.com/braluc"
+        },
+        {
+            "name": "Codeberg",
+            "icon": "simple-icons/codeberg.svg",
+            "uri": "codeberg.org/braluc"
+        },
+        {
+            "name": "Ariadne Id",
+            "icon": "arcticons/keyoxide.svg",
+            "uri": "keyoxide.org/br@ndon.dk"
+        },
+        {
+            "name": "Matrix",
+            "icon": "simple-icons/matrix.svg",
+            "uri": "@braluc:matrix.org"
+        }
+    ],
+    "alumniOf": [
+        {
+            "name": "Copenhagen School of Design & Technology",
+            "url": "https://kea.dk",
+            "sameAs": [
+                "https://da.wikipedia.org/wiki/K%C3%B8benhavns_Erhvervsakademi"
+            ],
+            "startDate": "Sep 2014",
+            "endDate": "Jan 2017",
+            "roleName": "BSc Computer Science"
+        },
+        {
+            "name": "Wake Technical Community College",
+            "url": "https://waketech.edu",
+            "sameAs": [
+                "https://en.wikipedia.org/wiki/Wake_Technical_Community_College"
+            ],
+            "startDate": "Sep 2009",
+            "endDate": "Jun 2011",
+            "roleName": "AAS Computer Programming"
+        }
+    ],
+    "organizations": {
+        "customer-romeo": {
+            "@type": "GovernmentOrganization",
+            "isicV4": "72",
+            "name": "Customer Romeo",
+            "roleName": "External consultant"
+        },
+        "customer-whiskey": {
+            "@type": "GovernmentOrganization",
+            "isicV4": "71",
+            "name": "Customer Whiskey",
+            "roleName": "External consultant"
+        },
+        "employer-delta": {
+            "@type": "Organization",
+            "roleName": "Senior Consultant",
+            "name": "Employer Delta",
+            "isicV4": "62"
+        },
+        "employer-juliett": {
+            "@type": "Organization",
+            "roleName": "Senior Developer",
+            "name": "Employer Juliett",
+            "isicV4": "62"
+        }
+    },
+    "projects": [
+        {
+            "projectName": "Project Sierra",
+            "description": "Anaylsis Platform",
+            "content": "Platform for sharing and analyzing microbiology information between public institutions. Provides secure access to a portal where sample data can be managed, uploaded for processing on dedicated HPC clusters, and visually compared.",
+            "role": "Lead developer",
+            "customers": [
+                "customer-romeo",
+                "customer-whiskey"
+            ],
+            "via": [
+                "employer-delta"
+            ],
+            "occupationalCategory": "15-1252.00",
+            "skills": [
+                "Python",
+                "TypeScript",
+                "C#",
+                "React",
+                "MongoDB",
+                "SQL Server",
+                "OIDC",
+                "OpenAPI",
+                "Docker",
+                "Compose",
+                "Linux",
+                "Bash"
+            ],
+            "responsibilities": [
+                "Consulting",
+                "Design",
+                "Development",
+                "Integration",
+                "Front-end",
+                "Back-end",
+                "Deployment",
+                "Support"
+            ],
+            "startDate": "Sep 2020",
+            "endDate": "Mar 2024",
+            "numberedPosition": 343019
+        },
+        {
+            "name": "Project Oscar",
+            "role": "Developer",
+            "description": "Print-Line Management System",
+            "content": "Hybrid/SaaS management software which integrates the customer's CMS or Label repository with Loftware NiceLabel, employing business-specific rules for templating the labels, modelling their Print-Lines and controlling their PLCs on the factory floor. Role consisted primarily of building the web interface for controlling the software, as well as orchestrating the containerization and deployment of all services to a hybrid on-premises/cloud environment.",
+            "customers": [
+                "customer-echo"
+            ],
+            "via": [
+                "employer-delta"
+            ],
+            "occupationalCategory": "15-1252.00",
+            "skills": [
+                "Azure",
+                "C#",
+                "PowerShell",
+                "Bash",
+                "TypeScript",
+                "React",
+                "Remix",
+                "BFF",
+                "OIDC",
+                "OpenAPI",
+                "CQRS",
+                "PostgreSQL",
+                "EventSourcing",
+                "Docker",
+                "Compose",
+                "Linux"
+            ],
+            "responsibilities": [
+                "Architecture",
+                "Design",
+                "Development",
+                "Front-end",
+                "Deployment"
+            ],
+            "startDate": "May 2022",
+            "endDate": "Dec 2022",
+            "numberedPosition": 514010
+        }
+    ]
+}

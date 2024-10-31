@@ -21,65 +21,70 @@
                 </li>
               </h3>
               <li>
-                ${ vendor/icons/simple-icons/googlemaps.svg() }
+                <img alt="Location" src="vendor/icons/simple-icons/googlemaps.svg"/>
                 $address$
               </li>
               <li>
-                ${ vendor/icons/ion/language.svg() }
-                <code>$knowsLanguage[; ]$</code>
+                <img alt="Languages" src="vendor/icons/ion/language.svg"/>
+                <span>
+                  <code>
+                    $for(knowsLanguage/pairs)$
+                      $it.key$;
+                    $endfor$
+                  </code>
+                </span>
               </li>
+              $for(sameAs/allbutlast)$
+                <li>
+                  <img alt="$it.name$" src="vendor/icons/$it.icon$">
+                  <a href="https://$it.uri$">
+                    <code>$it.uri$</code>
+                  </a>
+                </li>
+              $endfor$
               <li>
-                ${ vendor/icons/simple-icons/github.svg() }
-                <a href="https://$sameAs/first$">
-                  <code>$sameAs/first$</code>
-                </a>
-              </li>
-              <li>
-                ${ vendor/icons/simple-icons/codeberg.svg() }
-                <a href="https://$sameAs/last$">
-                  <code>$sameAs/last$</code>
-                </a>
-              </li>
-              <li>
-                ${ vendor/icons/simple-icons/letsencrypt.svg() }
+                <img alt="PGP Thumbprint" src="vendor/icons/simple-icons/letsencrypt.svg">
                 <a href="https://keyoxide.org/$email$">
-                  <code>$id$</code>
+                  <code>$thumbprint$</code>
                 </a>
               </li>
             </ul>
             <div>
               <h3>Summary</h3>
-              <p>${ content/text/summary.org() }</p>
+              <p>${ content/text/summary.html() }</p>
             </div>
           </footer>
         </section>
 
         <section>
           <h3>Professional Work</h3>
-          $for(hasOccupation)$
+          $for(projects/pairs)$
           <details open>
             <summary>
-              <span>$hasOccupation.hasOccupation.name$</span>
+              <span>$it.value.description$ --</span>
+              <span>$it.value.role$</span>
               <time>
-                $hasOccupation.startDate$ -
-                $hasOccupation.endDate$
+                $it.value.startDate$ -
+                $it.value.endDate$
               </time>
               <ul>
-                $for(hasOccupation.hasOccupation.skills)$
+                $for(it.value.skills)$
                 <li>
-                  $hasOccupation.hasOccupation.skills$
+                  $it$
                 </li>
                 $endfor$
               </ul>
             </summary>
-            <p>$hasOccupation.hasOccupation.description$</p>
-            <ul>
-              $for(hasOccupation.hasOccupation.responsibilities)$
-              <li>
-                $hasOccupation.hasOccupation.responsibilities$
-              </li>
-              $endfor$
-            </ul>
+              <div>
+                $it.value.content$
+              </div>
+              <ul>
+                $for(it.value.responsibilities)$
+                <li>
+                  $it$
+                </li>
+                $endfor$
+              </ul>
           </details>
           $endfor$
         </section>
@@ -89,14 +94,14 @@
           $for(alumniOf)$
           <details open>
             <summary>
-              <span>$alumniOf.alumniOf.name$</span>
+              <span>$alumniOf.name$</span>
               <time>
                 $alumniOf.startDate$ -
                 $alumniOf.endDate$
               </time>
             </summary>
             <p>$alumniOf.roleName$</p>
-            <p><a href="$alumniOf.alumniOf.url$">$alumniOf.alumniOf.url$</a></p>
+            <p><a href="$alumniOf.alumniOf.url$">$alumniOf.url$</a></p>
           </details>
           $endfor$
         </section>
