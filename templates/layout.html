@@ -1,114 +1,114 @@
 <style>
   ${ templates/layout.css() }
 </style>
-  <body>
 
-    ${ templates/nav.html() }
+<body>
 
-    <main>
-      <article>
+  ${ templates/nav.html() }
 
-        ${ templates/headline.html() }
-       
-        <section>
-          <footer>
-            <ul>
-              <h3>
-                <li>
-                  <a href="mailto:$email$">
-                    $email$
-                  </a>
-                </li>
-              </h3>
+  <main>
+    <article>
+
+      ${ templates/headline.html() }
+
+      <section>
+        <footer>
+          <ul>
+            <h3>
               <li>
-                <img alt="Location" src="vendor/icons/simple-icons/googlemaps.svg"/>
-                $address$
+                <a href="mailto:$email$">
+                  $email$
+                </a>
               </li>
-              <li>
-                <img alt="Languages" src="vendor/icons/ion/language.svg"/>
-                <span>
-                  <code>
+            </h3>
+            <li>
+              <img alt="Location" src="vendor/icons/simple-icons/googlemaps.svg" />
+              $address$
+            </li>
+            <li>
+              <img alt="Languages" src="vendor/icons/ion/language.svg" />
+              <span>
+                <code>
                     $for(knowsLanguage/pairs)$
                       $it.key$;
                     $endfor$
                   </code>
-                </span>
-              </li>
-              $for(sameAs/allbutlast)$
-                <li>
-                  <img alt="$it.name$" src="vendor/icons/$it.icon$">
-                  <a href="https://$it.uri$">
-                    <code>$it.uri$</code>
-                  </a>
-                </li>
-              $endfor$
+              </span>
+            </li>
+            $for(sameAs/allbutlast)$
+            <li>
+              <img alt="$it.name$" src="vendor/icons/$it.icon$">
+              <a href="https://$it.uri$">
+                <code>$it.uri$</code>
+              </a>
+            </li>
+            $endfor$
+            <li>
+              <img alt="PGP Thumbprint" src="vendor/icons/simple-icons/letsencrypt.svg">
+              <a href="https://keyoxide.org/$email$">
+                <code>$thumbprint$</code>
+              </a>
+            </li>
+          </ul>
+          <div>
+            <h3>Summary</h3>
+            <p>${ content/text/summary.html() }</p>
+          </div>
+        </footer>
+      </section>
+
+      <section>
+        <h3>Professional Work</h3>
+        $for(projects)$
+        <details open>
+          <summary>
+            <span>$projects.description$ --</span>
+            <span>$projects.role$</span>
+            <time>
+              $projects.startDate$ -
+              $projects.endDate$
+            </time>
+            <ul>
+              $for(projects.skills)$
               <li>
-                <img alt="PGP Thumbprint" src="vendor/icons/simple-icons/letsencrypt.svg">
-                <a href="https://keyoxide.org/$email$">
-                  <code>$thumbprint$</code>
-                </a>
+                $it$
               </li>
+              $endfor$
             </ul>
-            <div>
-              <h3>Summary</h3>
-              <p>${ content/text/summary.html() }</p>
-            </div>
-          </footer>
-        </section>
+          </summary>
+          <div>
+            $projects.content$
+          </div>
+          <ul>
+            $for(projects.responsibilities)$
+            <li>
+              $it$
+            </li>
+            $endfor$
+          </ul>
+        </details>
+        $endfor$
+      </section>
 
-        <section>
-          <h3>Professional Work</h3>
-          $for(projects/pairs)$
-          <details open>
-            <summary>
-              <span>$it.value.description$ --</span>
-              <span>$it.value.role$</span>
-              <time>
-                $it.value.startDate$ -
-                $it.value.endDate$
-              </time>
-              <ul>
-                $for(it.value.skills)$
-                <li>
-                  $it$
-                </li>
-                $endfor$
-              </ul>
-            </summary>
-              <div>
-                $it.value.content$
-              </div>
-              <ul>
-                $for(it.value.responsibilities)$
-                <li>
-                  $it$
-                </li>
-                $endfor$
-              </ul>
-          </details>
-          $endfor$
-        </section>
+      <section>
+        <h3>Education</h3>
+        $for(alumniOf)$
+        <details open>
+          <summary>
+            <span>$alumniOf.name$</span>
+            <time>
+              $alumniOf.startDate$ -
+              $alumniOf.endDate$
+            </time>
+          </summary>
+          <p>$alumniOf.roleName$</p>
+          <p><a href="$alumniOf.alumniOf.url$">$alumniOf.url$</a></p>
+        </details>
+        $endfor$
+      </section>
+    </article>
+  </main>
 
-        <section>
-          <h3>Education</h3>
-          $for(alumniOf)$
-          <details open>
-            <summary>
-              <span>$alumniOf.name$</span>
-              <time>
-                $alumniOf.startDate$ -
-                $alumniOf.endDate$
-              </time>
-            </summary>
-            <p>$alumniOf.roleName$</p>
-            <p><a href="$alumniOf.alumniOf.url$">$alumniOf.url$</a></p>
-          </details>
-          $endfor$
-        </section>
-      </article>
-    </main>
+  ${ templates/filters() }
 
-    ${ templates/filters() }
-    
-  </body>
-
+</body>

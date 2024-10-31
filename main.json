@@ -75,6 +75,30 @@
             "name": "Customer Whiskey",
             "roleName": "External consultant"
         },
+        "customer-echo": {
+            "@type": "Organization",
+            "isicV4": "28",
+            "name": "Customer Echo",
+            "roleName": "External consultant"
+        },
+        "customer-charlie": {
+            "@type": "NGO",
+            "isicV4": "88",
+            "name": "Customer Charlie",
+            "roleName": "External consultant"
+        },
+        "customer-papa": {
+            "@type": "Organization",
+            "isicV4": "46",
+            "name": "Customer Papa",
+            "roleName": "External consultant"
+        },
+        "customer-yankee": {
+            "@type": "NGO",
+            "isicV4": "88",
+            "name": "Customer Yankee",
+            "roleName": "External consultant"
+        },
         "employer-delta": {
             "@type": "Organization",
             "roleName": "Senior Consultant",
@@ -90,6 +114,7 @@
     },
     "projects": [
         {
+            "id": "project-sierra",
             "projectName": "Project Sierra",
             "description": "Anaylsis Platform",
             "content": "Platform for sharing and analyzing microbiology information between public institutions. Provides secure access to a portal where sample data can be managed, uploaded for processing on dedicated HPC clusters, and visually compared.",
@@ -131,7 +156,8 @@
             "numberedPosition": 343019
         },
         {
-            "name": "Project Oscar",
+            "id": "project-oscar",
+            "projectName": "Project Oscar",
             "role": "Developer",
             "description": "Print-Line Management System",
             "content": "Hybrid/SaaS management software which integrates the customer's CMS or Label repository with Loftware NiceLabel, employing business-specific rules for templating the labels, modelling their Print-Lines and controlling their PLCs on the factory floor. Role consisted primarily of building the web interface for controlling the software, as well as orchestrating the containerization and deployment of all services to a hybrid on-premises/cloud environment.",
@@ -170,6 +196,113 @@
             "startDate": "May 2022",
             "endDate": "Dec 2022",
             "numberedPosition": 514010
+        },
+        {
+            "id": "project-alfa",
+            "projectName": "Project Alfa",
+            "description": "Duplicate Detection Microservice",
+            "role": "Developer",
+            "customers": [
+                "customer-charlie"
+            ],
+            "via": [
+                "employer-delta"
+            ],
+            "occupationalCategory": "15-1252.00",
+            "content": "Service for comparing incoming Contacts against those already known within Customer's Power Platform tenancy using a series of business-defined heuristics. The micro-service was built specifically for ease of consumption by the organization's existing no-code Workflows.",
+            "skills": [
+                "Azure",
+                "C#",
+                "PowerPlatform",
+                "FunctionApp"
+            ],
+            "responsibilities": [
+                "Development",
+                "Integration",
+                "Back-end",
+                "Deployment"
+            ],
+            "startDate": "Jun 2023",
+            "endDate": "Aug 2023",
+            "numberedPosition": 371020
+        },
+        {
+            "id": "project-tango",
+            "projectName": "Project Tango",
+            "description": "Technician Portal",
+            "role": "Lead Developer",
+            "customers": [
+                "customer-papa"
+            ],
+            "via": [
+                "employer-delta"
+            ],
+            "content": "Web Portal surfacing data across myriad sources including SharePoint Online, Dynamics CRM, on-premises Navision, among other, in order to provide KB articles, installation data, etc. to technicians while on-site at a customer. Accelerated search via RediSearch; went on to become a primary data platform for the organization. Other features include: A Customer Portal; REST API servicing external integrations; Azure-to-on-premise tunnel.",
+            "skills": [
+                "Azure",
+                "WebApp",
+                "Entra",
+                "C#",
+                "PowerShell",
+                "Bash",
+                "TypeScript",
+                "React",
+                "OIDC",
+                "OpenAPI",
+                "Redis",
+                "RediSearch",
+                "SharePoint"
+            ],
+            "responsibilities": [
+                "Architecture",
+                "Consulting",
+                "Design",
+                "Development",
+                "Front-end",
+                "Back-end",
+                "Deployment",
+                "Integration",
+                "Support"
+            ],
+            "startDate": "Jan 2018",
+            "endDate": "Nov 2022",
+            "numberedPosition": 221118
+        },
+        {
+            "id": "project-bravo",
+            "projectName": "Project Bravo",
+            "description": "Webshop and Integrations",
+            "role": "Developer",
+            "customers": [],
+            "via": [
+                "employer-delta"
+            ],
+            "content": "Integrated an existing Webshop solution and WordPress site with a newly migrated Dynamics CRM instance and HeroBase API for a non-profit. This included creating registration and purchase forms which associated Contacts in CRM with various payments via various methods including PBS agreements.",
+            "skills": [
+                "Azure",
+                "WebApp",
+                "C#",
+                "F#",
+                "PHP",
+                "WordPress",
+                "OpenCart",
+                "HeroBase",
+                "Bash",
+                "JavaScript",
+                "OpenAPI",
+                "Dynamics CRM"
+            ],
+            "responsibilities": [
+                "Consulting",
+                "Development",
+                "Front-end",
+                "Back-end",
+                "Integration",
+                "Support"
+            ],
+            "startDate": "Apr 2017",
+            "endDate": "Mar 2018",
+            "numberedPosition": 337003
         }
     ]
 }
