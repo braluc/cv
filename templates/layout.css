@@ -71,7 +71,7 @@ details {
     }
 
     summary {
-
+        break-inside: avoid;
         list-style-position: outside;
 
         li {
@@ -252,4 +252,5 @@ print {
     nav {
         display: none;
     }
+
 }
