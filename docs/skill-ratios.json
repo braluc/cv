@@ -1,0 +1,16 @@
+{
+  "skillRatios": {
+    "C#": 1,
+    "Azure": 0.8,
+    "Bash": 0.8,
+    "OpenAPI": 0.8,
+    "OIDC": 0.6,
+    "React": 0.6,
+    "TypeScript": 0.6,
+    "WebApp": 0.4,
+    "PowerShell": 0.4,
+    "Linux": 0.4,
+    "Compose": 0.4,
+    "Docker": 0.4
+  }
+}

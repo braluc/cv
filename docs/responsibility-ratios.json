@@ -1,0 +1,13 @@
+{
+  "responsibilityRatios": {
+    "Development": 1,
+    "Deployment": 0.8,
+    "Back-end": 0.8,
+    "Front-end": 0.8,
+    "Integration": 0.8,
+    "Support": 0.6,
+    "Design": 0.6,
+    "Consulting": 0.6,
+    "Architecture": 0.4
+  }
+}

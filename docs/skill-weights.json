@@ -1,0 +1,16 @@
+{
+  "skillWeights": {
+    "C#": 5,
+    "Azure": 4,
+    "Bash": 4,
+    "OpenAPI": 4,
+    "OIDC": 3,
+    "React": 3,
+    "TypeScript": 3,
+    "WebApp": 2,
+    "PowerShell": 2,
+    "Linux": 2,
+    "Compose": 2,
+    "Docker": 2
+  }
+}

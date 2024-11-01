@@ -1,0 +1,13 @@
+{
+  "responsibilityWeights": {
+    "Development": 5,
+    "Deployment": 4,
+    "Back-end": 4,
+    "Front-end": 4,
+    "Integration": 4,
+    "Support": 3,
+    "Design": 3,
+    "Consulting": 3,
+    "Architecture": 2
+  }
+}

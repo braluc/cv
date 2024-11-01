@@ -63,6 +63,24 @@
         }
     ],
     "organizations": {
+        "customer-charlie": {
+            "@type": "NGO",
+            "isicV4": "88",
+            "name": "Customer Charlie",
+            "roleName": "External consultant"
+        },
+        "customer-echo": {
+            "@type": "Organization",
+            "isicV4": "28",
+            "name": "Customer Echo",
+            "roleName": "External consultant"
+        },
+        "customer-papa": {
+            "@type": "Organization",
+            "isicV4": "46",
+            "name": "Customer Papa",
+            "roleName": "External consultant"
+        },
         "customer-romeo": {
             "@type": "GovernmentOrganization",
             "isicV4": "72",
@@ -73,24 +91,6 @@
             "@type": "GovernmentOrganization",
             "isicV4": "71",
             "name": "Customer Whiskey",
-            "roleName": "External consultant"
-        },
-        "customer-echo": {
-            "@type": "Organization",
-            "isicV4": "28",
-            "name": "Customer Echo",
-            "roleName": "External consultant"
-        },
-        "customer-charlie": {
-            "@type": "NGO",
-            "isicV4": "88",
-            "name": "Customer Charlie",
-            "roleName": "External consultant"
-        },
-        "customer-papa": {
-            "@type": "Organization",
-            "isicV4": "46",
-            "name": "Customer Papa",
             "roleName": "External consultant"
         },
         "customer-yankee": {
@@ -273,7 +273,7 @@
             "projectName": "Project Bravo",
             "description": "Webshop and Integrations",
             "role": "Developer",
-            "customers": [],
+            "customers": ["customer-yankee"],
             "via": [
                 "employer-delta"
             ],

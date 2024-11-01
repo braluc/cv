@@ -165,7 +165,8 @@ background: var(--fg-dim);
 main {
 width: 100%;
 }
-article, nav {
+article,
+nav {
 background: var(--bg-main);
 box-shadow: rgba(0, 0, 0, 0.17) 1px 4px 7px, rgba(0, 0, 0, 0.24) 1px 3px 6px;
 padding: 0.5cm 0.5cm 0.5cm 0.5cm;
@@ -200,7 +201,8 @@ a {
 color: var(--fg-main);
 }
 span {
-font-weight: 700; }
+font-weight: 700;
+}
 time {
 float: right;
 color: var(--fg-dim);
@@ -299,12 +301,14 @@ text-align: justify;
 }
 }
 
-@media screen and (min-width: 21cm), print {
+@media screen and (min-width: 21cm),
+print {
 body {
 flex-direction: row-reverse;
 }
 main {
-width: auto; }
+width: auto;
+}
 footer {
 flex-direction: row;
 ul {
@@ -314,7 +318,8 @@ h3 {
 text-align: right;
 }
 }
-article, nav {
+article,
+nav {
 min-height: 100vh;
 padding: 2.5cm 2.5cm 2.5cm 2.5cm;
 }
@@ -340,6 +345,8 @@ body {
 width: var(--a4-width);
 margin: 0 auto;
 padding: 0;
+-webkit-print-color-adjust: exact !important;
+print-color-adjust: exact !important;
 }
 article {
 max-width: var(--a4-width);
@@ -350,13 +357,6 @@ padding-top: 0.5cm;
 }
 nav {
 display: none;
-}
-details {
-summary {
-li {
-color: var(--fg-main);
-}
-}
 }
 }</style>
 
@@ -518,6 +518,184 @@ text-align: right;
             </div>
           </footer>
         </section>
+
+        <section>
+          <h3>Skills</h3>
+          <style>
+figure {
+padding: 0;
+margin: 0;
+ul {
+list-style: none;
+padding: 0;
+margin: 0;
+width: 100%;
+li {
+padding: 0;
+margin: 0;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+label {
+margin: 0;
+padding: 0;
+font-variant: small-caps;
+text-transform: capitalize;
+font-size: 8pt;
+}
+meter {
+--background: var(--bg-main);
+--optimum: var(--maroon);
+background: var(--bg-main);
+
+
+display: block;
+margin-bottom: .2ch;
+width: 100%;
+height: 1.3ch;
+}
+meter::-webkit-meter-bar {
+background: var(--background);
+}
+meter:-moz-meter-optimum::-moz-meter-bar {
+background: var(--optimum);
+}
+meter::-webkit-meter-optimum-value {
+background: var(--optimum);
+}
+}
+}
+aside {
+display: flex;
+flex-direction: column;
+border-right: 1px solid var(--gold);
+padding-right: 1em;
+margin-bottom: 1.3ch;
+ul {
+li {
+meter {
+--optimum: var(--gold);
+}
+}
+}
+}
+div {
+padding-right: 1em;
+border-right: 1px solid var(--maroon);
+}
+}
+
+@media screen and (min-width: 21cm),
+print {
+figure {
+display: flex;
+gap: 1em;
+aside {
+flex: 0 0 25%;
+}
+div {
+width: 100%;
+columns: auto 2;
+}
+}
+}</style>
+
+          <figure>
+              <aside>
+                  <ul>
+                                  <li>
+                          <label for="Architecture">Architecture</label>
+                          <meter id="skill-Architecture" value="0.4" min="0" max="1">Architecture</meter>
+                      </li>
+                                  <li>
+                          <label for="Back-end">Back-end</label>
+                          <meter id="skill-Back-end" value="0.8" min="0" max="1">Back-end</meter>
+                      </li>
+                                  <li>
+                          <label for="Consulting">Consulting</label>
+                          <meter id="skill-Consulting" value="0.6" min="0" max="1">Consulting</meter>
+                      </li>
+                                  <li>
+                          <label for="Deployment">Deployment</label>
+                          <meter id="skill-Deployment" value="0.8" min="0" max="1">Deployment</meter>
+                      </li>
+                                  <li>
+                          <label for="Design">Design</label>
+                          <meter id="skill-Design" value="0.6" min="0" max="1">Design</meter>
+                      </li>
+                                  <li>
+                          <label for="Development">Development</label>
+                          <meter id="skill-Development" value="1" min="0" max="1">Development</meter>
+                      </li>
+                                  <li>
+                          <label for="Front-end">Front-end</label>
+                          <meter id="skill-Front-end" value="0.8" min="0" max="1">Front-end</meter>
+                      </li>
+                                  <li>
+                          <label for="Integration">Integration</label>
+                          <meter id="skill-Integration" value="0.8" min="0" max="1">Integration</meter>
+                      </li>
+                                  <li>
+                          <label for="Support">Support</label>
+                          <meter id="skill-Support" value="0.6" min="0" max="1">Support</meter>
+                      </li>
+                              </ul>
+              </aside>
+              <div>
+                  <ul>
+                                  <li>
+                          <label for="Azure">Azure</label>
+                          <meter id="skill-Azure" value="0.8" min="0" max="1">Azure</meter>
+                      </li>
+                                  <li>
+                          <label for="Bash">Bash</label>
+                          <meter id="skill-Bash" value="0.8" min="0" max="1">Bash</meter>
+                      </li>
+                                  <li>
+                          <label for="C#">C#</label>
+                          <meter id="skill-C#" value="1" min="0" max="1">C#</meter>
+                      </li>
+                                  <li>
+                          <label for="Compose">Compose</label>
+                          <meter id="skill-Compose" value="0.4" min="0" max="1">Compose</meter>
+                      </li>
+                                  <li>
+                          <label for="Docker">Docker</label>
+                          <meter id="skill-Docker" value="0.4" min="0" max="1">Docker</meter>
+                      </li>
+                                  <li>
+                          <label for="Linux">Linux</label>
+                          <meter id="skill-Linux" value="0.4" min="0" max="1">Linux</meter>
+                      </li>
+                                  <li>
+                          <label for="OIDC">OIDC</label>
+                          <meter id="skill-OIDC" value="0.6" min="0" max="1">OIDC</meter>
+                      </li>
+                                  <li>
+                          <label for="OpenAPI">OpenAPI</label>
+                          <meter id="skill-OpenAPI" value="0.8" min="0" max="1">OpenAPI</meter>
+                      </li>
+                                  <li>
+                          <label for="PowerShell">PowerShell</label>
+                          <meter id="skill-PowerShell" value="0.4" min="0" max="1">PowerShell</meter>
+                      </li>
+                                  <li>
+                          <label for="React">React</label>
+                          <meter id="skill-React" value="0.6" min="0" max="1">React</meter>
+                      </li>
+                                  <li>
+                          <label for="TypeScript">TypeScript</label>
+                          <meter id="skill-TypeScript" value="0.6" min="0" max="1">TypeScript</meter>
+                      </li>
+                                  <li>
+                          <label for="WebApp">WebApp</label>
+                          <meter id="skill-WebApp" value="0.4" min="0" max="1">WebApp</meter>
+                      </li>
+                              </ul>
+              </div>
+
+
+          </figure>      </section>
 
         <section>
           <h3>Professional Work</h3>
