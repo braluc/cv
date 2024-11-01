@@ -67,12 +67,14 @@
         $for(projects)$
         <details open>
           <summary>
-            <span>$projects.description$ --</span>
-            <span>$projects.role$</span>
-            <time>
-              $projects.startDate$ -
-              $projects.endDate$
-            </time>
+            <h4>
+              <span>$projects.description$ --</span>
+              <span>$projects.role$</span>
+              <time>
+                $projects.startDate$ -
+                $projects.endDate$
+              </time>
+            </h4>
             <ul>
               $for(projects.skills)$
               <li>
@@ -100,11 +102,13 @@
         $for(alumniOf)$
         <details open>
           <summary>
-            <span>$alumniOf.name$</span>
-            <time>
-              $alumniOf.startDate$ -
-              $alumniOf.endDate$
-            </time>
+            <h4>
+              <span>$alumniOf.name$</span>
+              <time>
+                $alumniOf.startDate$ -
+                $alumniOf.endDate$
+              </time>
+            </h4>
           </summary>
           <p>$alumniOf.roleName$</p>
           <p><a href="$alumniOf.alumniOf.url$">$alumniOf.url$</a></p>
